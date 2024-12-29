@@ -1,0 +1,255 @@
+[
+    {
+      "id": 1,
+      "adventureTitle": "Mount Everest Base Camp Trek",
+      "image": "https://example.com/everest.jpg",
+      "categoryName": "Trekking",
+      "shortDescription": "Experience the majestic Himalayas with this breathtaking trek.",
+      "adventureCost": 1200,
+      "bookingAvailability": true,
+      "location": "Nepal",
+      "duration": "14 Days",
+      "adventureLevel": "Challenging",
+      "includedItems": [
+        "Guide and porter",
+        "Accommodation in tea houses",
+        "Meals (breakfast, lunch, dinner)"
+      ],
+      "ecoFriendlyFeatures": [
+        "Use of biodegradable materials",
+        "Minimal impact trekking routes",
+        "Support for local communities"
+      ],
+      "maxGroupSize": 12,
+      "specialInstructions": [
+        "Bring proper trekking gear",
+        "Ensure travel insurance",
+        "Acclimatize to avoid altitude sickness"
+      ]
+    },
+    {
+      "id": 2,
+      "adventureTitle": "Diving in Raja Ampat",
+      "image": "https://example.com/rajaampat.jpg",
+      "categoryName": "Diving",
+      "shortDescription": "Discover vibrant coral reefs and exotic marine life in Indonesia.",
+      "adventureCost": 1500,
+      "bookingAvailability": true,
+      "location": "Indonesia",
+      "duration": "7 Days",
+      "adventureLevel": "Intermediate",
+      "includedItems": [
+        "Diving equipment",
+        "Accommodation",
+        "Meals (breakfast, lunch, dinner)"
+      ],
+      "ecoFriendlyFeatures": [
+        "Coral reef conservation efforts",
+        "Eco-friendly diving practices",
+        "No single-use plastics"
+      ],
+      "maxGroupSize": 8,
+      "specialInstructions": [
+        "Must have prior diving certification",
+        "Avoid touching coral reefs",
+        "Pack reef-safe sunscreen"
+      ]
+    },
+    {
+      "id": 3,
+      "adventureTitle": "Wildlife Safari in Borneo",
+      "image": "https://example.com/borneo.jpg",
+      "categoryName": "Wildlife Safari",
+      "shortDescription": "Explore the dense rainforests of Borneo and encounter exotic wildlife.",
+      "adventureCost": 800,
+      "bookingAvailability": true,
+      "location": "Malaysia",
+      "duration": "5 Days",
+      "adventureLevel": "Easy",
+      "includedItems": [
+        "Experienced guide",
+        "Jungle accommodations",
+        "Meals (breakfast, lunch, dinner)"
+      ],
+      "ecoFriendlyFeatures": [
+        "Support for orangutan rehabilitation centers",
+        "Eco-lodges using renewable energy",
+        "Minimal waste policies"
+      ],
+      "maxGroupSize": 15,
+      "specialInstructions": [
+        "Carry mosquito repellent",
+        "Wear light, breathable clothing",
+        "Respect wildlife habitats"
+      ]
+    },
+    {
+      "id": 4,
+      "adventureTitle": "Cultural and Eco-Tour in Bhutan",
+      "image": "https://example.com/bhutan.jpg",
+      "categoryName": "Cultural Tour",
+      "shortDescription": "Immerse yourself in the pristine beauty and culture of Bhutan.",
+      "adventureCost": 1800,
+      "bookingAvailability": true,
+      "location": "Bhutan",
+      "duration": "10 Days",
+      "adventureLevel": "Moderate",
+      "includedItems": [
+        "Guided tours",
+        "Eco-friendly accommodation",
+        "Meals and beverages"
+      ],
+      "ecoFriendlyFeatures": [
+        "Focus on carbon-neutral tourism",
+        "Local organic food sourcing",
+        "Strict environmental policies"
+      ],
+      "maxGroupSize": 10,
+      "specialInstructions": [
+        "Respect cultural norms",
+        "Prepare for high-altitude areas",
+        "Avoid single-use plastics"
+      ]
+    },
+    {
+      "id": 5,
+      "adventureTitle": "Kayaking in Ha Long Bay",
+      "image": "https://example.com/halongbay.jpg",
+      "categoryName": "Kayaking",
+      "shortDescription": "Paddle through stunning limestone karsts and caves in Vietnam.",
+      "adventureCost": 500,
+      "bookingAvailability": true,
+      "location": "Vietnam",
+      "duration": "3 Days",
+      "adventureLevel": "Easy",
+      "includedItems": [
+        "Kayaking gear",
+        "Local guide",
+        "Snacks and water"
+      ],
+      "ecoFriendlyFeatures": [
+        "Plastic waste cleanup initiatives",
+        "Use of biodegradable gear",
+        "Local community involvement"
+      ],
+      "maxGroupSize": 10,
+      "specialInstructions": [
+        "Wear life jackets at all times",
+        "Carry waterproof bags",
+        "Avoid littering in the bay"
+      ]
+    },
+    {
+      "id": 6,
+      "adventureTitle": "Tiger Safari in Ranthambore",
+      "image": "https://example.com/ranthambore.jpg",
+      "categoryName": "Wildlife Safari",
+      "shortDescription": "Spot majestic tigers in their natural habitat in Rajasthan.",
+      "adventureCost": 600,
+      "bookingAvailability": true,
+      "location": "India",
+      "duration": "4 Days",
+      "adventureLevel": "Moderate",
+      "includedItems": [
+        "Experienced wildlife guide",
+        "Accommodation in eco-lodges",
+        "Meals (breakfast, lunch, dinner)"
+      ],
+      "ecoFriendlyFeatures": [
+        "Support for tiger conservation",
+        "Sustainable accommodations",
+        "Plastic-free safaris"
+      ],
+      "maxGroupSize": 10,
+      "specialInstructions": [
+        "Follow park rules",
+        "Avoid loud noises",
+        "Carry binoculars"
+      ]
+    },
+    {
+      "id": 7,
+      "adventureTitle": "Ziplining in Chiang Mai",
+      "image": "https://example.com/chiangmai.jpg",
+      "categoryName": "Adventure Sports",
+      "shortDescription": "Fly through the lush jungles of northern Thailand.",
+      "adventureCost": 200,
+      "bookingAvailability": true,
+      "location": "Thailand",
+      "duration": "1 Day",
+      "adventureLevel": "Easy",
+      "includedItems": [
+        "Safety harness and helmet",
+        "Professional instructors",
+        "Lunch and refreshments"
+      ],
+      "ecoFriendlyFeatures": [
+        "Tree-friendly zipline platforms",
+        "Local community initiatives",
+        "Plastic-free zone"
+      ],
+      "maxGroupSize": 20,
+      "specialInstructions": [
+        "Wear comfortable clothing",
+        "Follow safety guidelines",
+        "Avoid heavy meals before activity"
+      ]
+    },
+    {
+      "id": 8,
+      "adventureTitle": "Camping in the Gobi Desert",
+      "image": "https://example.com/gobi.jpg",
+      "categoryName": "Camping",
+      "shortDescription": "Spend nights under the stars in the vast Gobi Desert.",
+      "adventureCost": 700,
+      "bookingAvailability": true,
+      "location": "Mongolia",
+      "duration": "6 Days",
+      "adventureLevel": "Moderate",
+      "includedItems": [
+        "Tents and sleeping bags",
+        "Local guide",
+        "Meals (breakfast, lunch, dinner)"
+      ],
+      "ecoFriendlyFeatures": [
+        "Leave-no-trace camping",
+        "Eco-friendly gear",
+        "Local nomadic culture support"
+      ],
+      "maxGroupSize": 8,
+      "specialInstructions": [
+        "Pack warm clothing",
+        "Bring reusable water bottles",
+        "Respect local traditions"
+      ]
+    },
+    {
+      "id": 9,
+      "adventureTitle": "Hot Air Balloon Ride in Cappadocia",
+      "image": "https://example.com/cappadocia.jpg",
+      "categoryName": "Scenic Adventure",
+      "shortDescription": "Soar above the unique landscapes of Cappadocia in Turkey.",
+      "adventureCost": 250,
+      "bookingAvailability": true,
+      "location": "Turkey",
+      "duration": "1 Day",
+      "adventureLevel": "Easy",
+      "includedItems": [
+        "Hot air balloon ride",
+        "Light breakfast",
+        "Certificate of participation"
+      ],
+      "ecoFriendlyFeatures": [
+        "Low-carbon emission flights",
+        "Reusable materials for balloons",
+        "Support for local eco-projects"
+      ],
+      "maxGroupSize": 16,
+      "specialInstructions": [
+        "Arrive early for safety briefing",
+        "Wear warm clothing",
+        "Follow pilot instructions"
+      ]
+    }
+  ]
+  
