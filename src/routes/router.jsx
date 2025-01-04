@@ -7,6 +7,9 @@ import MyProfile from "../Pages/MyProfile";
 import AdventureDetails from "../Pages/AdventureDetails";
 import LogIn from "../Pages/LogIn";
 import Register from "../Pages/Register";
+import PrivateRoute from "./PrivateRoute";
+import Loading from "../Pages/Loading";
+import ForgetPass from "../Pages/ForgetPass";
 
 const router = createBrowserRouter([
     {
@@ -29,11 +32,11 @@ const router = createBrowserRouter([
             },
             {
                 path:'/profile',
-                element:<MyProfile></MyProfile>,
+                element:<PrivateRoute><MyProfile></MyProfile></PrivateRoute>,
             },
             {
                 path:'/viewDetails/:id',
-                element:<AdventureDetails></AdventureDetails>,
+                element:<PrivateRoute><AdventureDetails></AdventureDetails></PrivateRoute>,
                 loader:()=>fetch('../eco.json'),
             },
             {
@@ -43,7 +46,12 @@ const router = createBrowserRouter([
             {
                 path:'/register',
                 element:<Register></Register>,
+            },
+            {
+                path:'/forget-pass',
+                element:<ForgetPass></ForgetPass>,
             }
+           
           
         ]
       

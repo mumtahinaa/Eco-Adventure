@@ -1,5 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import 'aos/dist/aos.css'; 
+import Aos from 'aos';
+
 
 const EcoSingle = ({adventure}) => {
     const {id,image,adventureTitle ,ecoFriendlyFeatures } =adventure;
@@ -8,9 +11,16 @@ const EcoSingle = ({adventure}) => {
     const handleExplore =()=>{
         navigate(`/viewDetails/${id}`);
     }
+    useEffect(()=>{
+         Aos.init({
+        duration: 1000, // Animation duration
+        once: false,     // Whether animation should happen only once
+      });
+    },[]);
     return (
         
-           <div className="card w-full  bg-base-100 shadow-xl hover:shadow-2xl transition-shadow duration-300 ">
+        <div data-aos="flip-left"  data-aos-offset="200">
+               <div className="card w-full  bg-base-100 shadow-xl hover:shadow-2xl transition-shadow duration-300  "  >
       <figure>
         <img
           src={image}
@@ -34,6 +44,7 @@ const EcoSingle = ({adventure}) => {
         </div>
       </div>
     </div>
+        </div>
  
        
     );

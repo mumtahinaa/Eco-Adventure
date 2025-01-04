@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import logo from '../assets/logo.png';
 import { Link, NavLink } from 'react-router-dom';
 import { FaRegUserCircle } from "react-icons/fa";
+import { AuthContext } from '../Utillity/AuthProvider';
 
 
 
 const Navbar = () => {
+  const {user,logOut}= useContext(AuthContext);
+  console.log(user);
     return (
         <div className="navbar bg-blue-950">
         <div className="navbar-start">
@@ -31,7 +34,7 @@ const Navbar = () => {
           <NavLink to='/adventure' className='lg:text-white lg:text-lg lg:font-normal text-base font-normal  text-white'>Adventures</NavLink>
         
           <NavLink to='/about' className='lg:text-white lg:text-lg lg:font-normal text-base font-normal text-white'>About Us</NavLink>
-          <NavLink to='/myprofile' className='lg:text-white lg:text-lg lg:font-normal text-base font-normal text-white'>My Profile</NavLink>
+          <NavLink to='/profile' className='lg:text-white lg:text-lg lg:font-normal text-base font-normal text-white'>My Profile</NavLink>
             </ul>
           </div>
           <div><FaRegUserCircle className='text-gray-300 w-10 h-10 lg:hidden block' /></div>
@@ -46,12 +49,24 @@ const Navbar = () => {
           <NavLink to='/adventure' className='lg:text-white lg:text-lg lg:font-normal '>Adventures</NavLink>
         
           <NavLink to='/about' className='lg:text-white lg:text-lg lg:font-normal '>About Us</NavLink>
-          <NavLink to='/myprofile' className='lg:text-white lg:text-lg lg:font-normal '>My Profile</NavLink>
+          <NavLink to='/profile' className='lg:text-white lg:text-lg lg:font-normal '>My Profile</NavLink>
           </ul>
         </div>
         <div className="navbar-end lg:mr-8 lg:gap-3">
-        <div><FaRegUserCircle className='text-gray-300 w-10 h-10 lg:block hidden' /></div>
-          <Link to='/login' ><button className='btn text-base font-semibold bg-[#8BBF44] border-[#8BBF44]  hover:bg-[#8BBF44] hover:border-[#8BBF44]  text-white'>LogIn</button></Link>
+
+          {
+            user && user?.email && user?.photoURL ?( <div className='tooltip 'data-tip={user?.email}>
+              <img className="w-10 h-10 rounded-full" src={user?.photoURL} alt="" />
+              
+            </div>):( <div className='tooltip ' data-tip={user?.email}><FaRegUserCircle className='text-gray-300 w-10 h-10 lg:block hidden'  />
+    
+              </div>)
+          }
+       
+        {
+         user && user?.email ?( <button onClick={logOut} className='btn text-base font-semibold bg-[#8BBF44] border-[#8BBF44]  hover:bg-[#8BBF44] hover:border-[#8BBF44]  text-white'>LogOut</button>):( <Link to='/login' ><button className='btn text-base font-semibold bg-[#8BBF44] border-[#8BBF44]  hover:bg-[#8BBF44] hover:border-[#8BBF44]  text-white'>LogIn</button></Link>)
+        }
+          
           
 
         </div>
