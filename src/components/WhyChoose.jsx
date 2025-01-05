@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const WhyChoose = () => {
     return (
         <div className=" py-12 w-11/12 mx-auto">
   <div className="container mx-auto px-6 md:px-12 text-center">
-    <h2 className="text-3xl md:text-4xl font-bold text-[#8BBF44] mb-6">
+    <h2 className="text-2xl md:text-4xl font-bold text-[#8BBF44] mb-6">
       Why Choose Eco-Trek Asia?
     </h2>
     <p className="text-gray-700 text-lg max-w-3xl mx-auto">
@@ -53,9 +54,9 @@ const WhyChoose = () => {
       </div>
     </div>
 
-    <button className="mt-8 px-6 py-3 btn text-base font-semibold bg-[#8BBF44] text-white hover:bg-[#94cb47]">
+   <Link to='/about'> <button className="mt-8 px-6 py-3 btn text-base font-semibold bg-[#8BBF44] text-white hover:bg-[#94cb47]">
       Learn More About Our Mission
-    </button>
+    </button></Link>
   </div>
 </div>
 
