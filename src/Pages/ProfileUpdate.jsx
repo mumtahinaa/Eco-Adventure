@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import { AuthContext } from '../Utillity/AuthProvider';
 import { useNavigate } from 'react-router-dom';
 import {  toast, ToastContainer } from 'react-toastify';
+import DynamicTitle from '../components/DynamicTitle';
 
 const ProfileUpdate = () => {
     const {handleUpdatedData}= useContext(AuthContext);
@@ -34,6 +35,7 @@ const ProfileUpdate = () => {
     }
     return (
         <div className="min-h-screen flex items-center justify-center bg-gray-100">
+              <DynamicTitle />
         <div className="w-full max-w-md bg-white p-8 rounded-lg shadow-lg">
             <h1 className="text-2xl font-semibold text-center mb-6 text-gray-800">
                 Update Your Profile

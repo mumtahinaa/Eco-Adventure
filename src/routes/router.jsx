@@ -12,6 +12,7 @@ import Loading from "../Pages/Loading";
 import ForgetPass from "../Pages/ForgetPass";
 import UpdateProfile from "../Pages/ProfileUpdate";
 import ErrorPage from "../components/ErrorPage";
+import DynamicTitle from "../components/DynamicTitle";
 
 const router = createBrowserRouter([
     {
@@ -57,7 +58,7 @@ const router = createBrowserRouter([
             {
                 path:'/forget-pass',
                 element:<ForgetPass></ForgetPass>,
-            }
+            },
            
           
         ]

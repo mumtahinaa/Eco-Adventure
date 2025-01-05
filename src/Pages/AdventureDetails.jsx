@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import { FaCheckCircle, FaMapMarkerAlt, FaDollarSign, FaClock } from "react-icons/fa";
+import DynamicTitle from "../components/DynamicTitle";
 
 const AdventureDetails = () => {
   const { id } = useParams();
@@ -63,6 +64,8 @@ const AdventureDetails = () => {
 
   return (
     <div className="mx-auto">
+        <DynamicTitle></DynamicTitle>
+       
       
       <div className="relative  overflow-hidden shadow-lg ">
         <img

@@ -3,6 +3,7 @@ import { FcGoogle } from 'react-icons/fc';
 import { Link,  useNavigate } from 'react-router-dom';
 import { AuthContext } from '../Utillity/AuthProvider';
 import { FaEye,FaEyeSlash } from "react-icons/fa6";
+import DynamicTitle from '../components/DynamicTitle';
 
 const Register = () => {
 const {register,setUser,googleLogIn}= useContext(AuthContext);
@@ -54,6 +55,7 @@ const navigate = useNavigate();
    
     return (
         <div className="min-h-screen flex items-center justify-center bg-gray-100">
+              <DynamicTitle />
             <div className="w-full max-w-md bg-white p-8 rounded-lg shadow-lg">
                 <h1 className="text-2xl font-semibold text-center mb-6 text-gray-800">
                     Register for EcoTrek-Asia

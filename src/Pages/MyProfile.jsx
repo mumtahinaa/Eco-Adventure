@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { AuthContext } from '../Utillity/AuthProvider';
 import { Link } from 'react-router-dom';
+import DynamicTitle from '../components/DynamicTitle';
 
 const MyProfile = () => {
     const { user } = useContext(AuthContext);
@@ -13,6 +14,7 @@ const MyProfile = () => {
 
     return (
         <div className="min-h-screen  flex items-center justify-center">
+              <DynamicTitle/>
             <div className="w-full max-w-2xl bg-white p-8 rounded-lg shadow-lg">
                 <h1 className="text-3xl font-semibold text-center mb-6 text-[#8BBF44]">
                     Welcome to Your Eco Adventure, {user?.displayName || 'Explorer'}!
