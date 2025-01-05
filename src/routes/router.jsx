@@ -10,7 +10,7 @@ import Register from "../Pages/Register";
 import PrivateRoute from "./PrivateRoute";
 import Loading from "../Pages/Loading";
 import ForgetPass from "../Pages/ForgetPass";
-import UpdateProfile from "../Pages/UpdateProfile";
+import UpdateProfile from "../Pages/ProfileUpdate";
 
 const router = createBrowserRouter([
     {

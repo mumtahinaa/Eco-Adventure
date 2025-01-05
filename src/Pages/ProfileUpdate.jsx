@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { AuthContext } from '../Utillity/AuthProvider';
 
-const UpdateProfile = () => {
+const ProfileUpdate = () => {
+    const {handleUpdatedData}= useContext(AuthContext)
     const handleUpdate =(e)=>{
               e.preventDefault();
-              
+              const name = e.target.name.value;
+              const photo =e.target.photo.value;
+              console.log(name,photo);
+              handleUpdatedData({})
+
     }
     return (
         <div className="min-h-screen flex items-center justify-center bg-gray-100">
@@ -18,8 +24,7 @@ const UpdateProfile = () => {
                     </label>
                     <input
                         type="text"
-                        // value={name}
-                        // onChange={(e) => setName(e.target.value)}
+                        name='name'
                         placeholder="Enter your name"
                         className="input input-bordered"
                         required
@@ -30,9 +35,8 @@ const UpdateProfile = () => {
                         <span className="label-text">Photo URL</span>
                     </label>
                     <input
-                        type="text"
-                        // value={photoURL}
-                        // onChange={(e) => setPhotoURL(e.target.value)}
+                        type="url"
+                        name='photo'
                         placeholder="Enter photo URL"
                         className="input input-bordered"
                     />
@@ -53,4 +57,4 @@ const UpdateProfile = () => {
     );
 };
 
-export default UpdateProfile;
+export default ProfileUpdate;
