@@ -17,6 +17,13 @@ const Footer = () => {
       Your gateway to sustainable adventures and unforgettable eco-friendly experiences across Asia.
     </p>
   </aside>
+  <nav className="grid  gap-4">
+    <h6 class="footer-title">Services</h6>
+    <a href='/about' className="link link-hover">About us</a>
+    <a href='/adventure' className="link link-hover">Adventures</a>
+    <a href='/profile'className="link link-hover">Profile</a>
+  </nav>
+  
   <div className='flex flex-col place-items-start'>
     <h6 className="footer-title">Social</h6>
     <div className="grid grid-flow-col gap-4">
