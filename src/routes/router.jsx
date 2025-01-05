@@ -10,6 +10,7 @@ import Register from "../Pages/Register";
 import PrivateRoute from "./PrivateRoute";
 import Loading from "../Pages/Loading";
 import ForgetPass from "../Pages/ForgetPass";
+import UpdateProfile from "../Pages/UpdateProfile";
 
 const router = createBrowserRouter([
     {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
             {
                 path:'/profile',
                 element:<PrivateRoute><MyProfile></MyProfile></PrivateRoute>,
+            },
+            {
+              path:'/update-pro',
+              element:<PrivateRoute><UpdateProfile></UpdateProfile></PrivateRoute>
             },
             {
                 path:'/viewDetails/:id',

@@ -35,9 +35,10 @@ const Navbar = () => {
         
           <NavLink to='/about' className='lg:text-white lg:text-lg lg:font-normal text-base font-normal text-white'>About Us</NavLink>
           <NavLink to='/profile' className='lg:text-white lg:text-lg lg:font-normal text-base font-normal text-white'>My Profile</NavLink>
+          <NavLink to='/update-pro' className='lg:text-white lg:text-lg lg:font-normal text-base font-normal text-white'>Update Profile</NavLink>
             </ul>
           </div>
-          <div><FaRegUserCircle className='text-gray-300 w-10 h-10 lg:hidden block' /></div>
+          <div className='tooltip ' data-tip={user?.email}><FaRegUserCircle className='text-gray-300 w-10 h-10 lg:hidden block' /></div>
           <div className='lg:px-0 lg:block hidden'><img src={logo} alt="" /></div>
         </div>
         <div className='navbar-center lg:hidden block'>
@@ -50,13 +51,14 @@ const Navbar = () => {
         
           <NavLink to='/about' className='lg:text-white lg:text-lg lg:font-normal '>About Us</NavLink>
           <NavLink to='/profile' className='lg:text-white lg:text-lg lg:font-normal '>My Profile</NavLink>
+          <NavLink to='/update-pro' className='lg:text-white lg:text-lg lg:font-normal '>Update Profile</NavLink>
           </ul>
         </div>
         <div className="navbar-end lg:mr-8 lg:gap-3">
 
           {
             user && user?.email && user?.photoURL ?( <div className='tooltip 'data-tip={user?.email}>
-              <img className="w-10 h-10 rounded-full" src={user?.photoURL} alt="" />
+              <img className="w-10 h-10 rounded-full hidden  lg:block" src={user?.photoURL} alt="" />
               
             </div>):( <div className='tooltip ' data-tip={user?.email}><FaRegUserCircle className='text-gray-300 w-10 h-10 lg:block hidden'  />
     
