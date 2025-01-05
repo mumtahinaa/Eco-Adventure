@@ -38,7 +38,14 @@ const Navbar = () => {
           <NavLink to='/update-pro' className='lg:text-white lg:text-lg lg:font-normal text-base font-normal text-white'>Update Profile</NavLink>
             </ul>
           </div>
-          <div className='tooltip ' data-tip={user?.email}><FaRegUserCircle className='text-gray-300 w-10 h-10 lg:hidden block' /></div>
+          {
+            user && user?.email && user?.photoURL ?( <div className='tooltip 'data-tip={user?.email}>
+              <img className="w-10 h-10 rounded-full lg:hidden  block" src={user?.photoURL} alt="" />
+              
+            </div>):( <div className='tooltip ' data-tip={user?.email}><FaRegUserCircle className='text-gray-300 w-10 h-10 block lg:hidden'  />
+    
+              </div>)
+          }
           <div className='lg:px-0 lg:block hidden'><img src={logo} alt="" /></div>
         </div>
         <div className='navbar-center lg:hidden block'>

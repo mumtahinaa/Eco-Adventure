@@ -1,14 +1,35 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { AuthContext } from '../Utillity/AuthProvider';
+import { useNavigate } from 'react-router-dom';
+import {  toast, ToastContainer } from 'react-toastify';
 
 const ProfileUpdate = () => {
-    const {handleUpdatedData}= useContext(AuthContext)
+    const {handleUpdatedData}= useContext(AuthContext);
+    const [error,setError] = useState('');
+    const navigate = useNavigate();
     const handleUpdate =(e)=>{
               e.preventDefault();
               const name = e.target.name.value;
               const photo =e.target.photo.value;
               console.log(name,photo);
-              handleUpdatedData({})
+               setError('');
+              if(name.length <5){
+                setError("**name should be more than 5 character");
+                return;
+              }
+
+              handleUpdatedData({displayName:name,photoURL:photo})
+              .then(()=>{
+                toast.success("Profile Updated");
+
+                navigate('/profile');
+                
+
+              })
+              .catch((err)=>{
+                console.log(err)
+              })
+
 
     }
     return (
@@ -29,6 +50,9 @@ const ProfileUpdate = () => {
                         className="input input-bordered"
                         required
                     />
+                    {
+                        error && <small className='text-xs text-red-700'>{error}</small>
+                    }
                 </div>
                 <div className="form-control mb-4">
                     <label className="label">
@@ -39,6 +63,7 @@ const ProfileUpdate = () => {
                         name='photo'
                         placeholder="Enter photo URL"
                         className="input input-bordered"
+                        
                     />
                 </div>
                 {/* {error && <p className="text-red-600 text-sm">{error}</p>}
@@ -53,6 +78,7 @@ const ProfileUpdate = () => {
                 </div>
             </form>
         </div>
+        <ToastContainer/>
     </div>
     );
 };
